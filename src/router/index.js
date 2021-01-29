@@ -19,14 +19,14 @@ const routes = [
     component: Create
   },
   {
-    path: "/feed",
-    name: "Feed",
-    component: Feed
-  },
-  {
     path: "/meme/:memeId",
     name: "Details",
     component: Details
+  },
+  {
+    path: "/feed",
+    name: "Feed",
+    component: Feed
   }
 ];
 
