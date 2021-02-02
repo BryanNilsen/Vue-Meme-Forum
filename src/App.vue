@@ -3,8 +3,8 @@
     <v-app-bar app color="teal darken-2" dark>
       <h1>Vue Meme Forum</h1>
       <v-spacer></v-spacer>
+      <router-link to="/"> Home </router-link>
       <router-link to="/create"> Create </router-link>
-      |
       <router-link to="/feed"> Memes </router-link>
     </v-app-bar>
 
@@ -14,25 +14,11 @@
   </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style scoped>
+a {
+  text-decoration: none;
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.router-link-active .v-btn {
+  color: rgb(255, 200, 100);
 }
 </style>
